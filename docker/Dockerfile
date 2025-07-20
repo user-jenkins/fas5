@@ -1,5 +1,6 @@
 FROM openjdk:8-jdk-alpine
 WORKDIR /app
-COPY target/fas5.jar /app/
+COPY . /app
+RUN javac Main.java
 EXPOSE 8080
-CMD ["java", "-jar", "fas5.jar"]
+CMD ["java", "Main"]
