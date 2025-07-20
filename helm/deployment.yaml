@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fas5-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fas5
+  template:
+    metadata:
+      labels:
+        app: fas5
+    spec:
+      containers:
+      - name: fas5
+        image: "fas5:latest"
+        ports:
+        - containerPort: 8080
