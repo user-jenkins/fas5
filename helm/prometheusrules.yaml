@@ -4,7 +4,7 @@ metadata:
   name: fas5-prometheusrules
 spec:
   groups:
-  - name: fas5.rules
+  - name: fas5-rules
     rules:
-    - alert: Fas5HighRequestLatency
-      expr: increase(fas5_request_latency_bucket[1m]) > 0.5
+    - alert: Fas5HighCpuUsage
+      expr: cpu_usage > 0.7
