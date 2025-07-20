@@ -11,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: fas5
+            name: fas5-service
             port:
               number: 80
