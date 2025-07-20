@@ -3,4 +3,4 @@ kind: Alertmanager
 metadata:
   name: fas5-alertmanager
 spec:
-  replicas: 1
+  replicas: 2
